@@ -3,51 +3,48 @@
 	
 	<div class="container">
 
-	 <span class="glyphicon glyphicon-info-sign pull-left">
-      </span>
-       <p class="pull-right">Step 2 of 6</p>
-       <br>
-       <h4 class="text-danger text-center">Any field that is marked with asterisk * is a required field</h4>
+	<p style = "font-size:30px;margin-bottom:25px;"><button type = "button" style = "background-color:white;border:1px solid white;"><span class="glyphicon glyphicon-info-sign pull-left" onclick=""></span></button><span class="pull-right" style = "font-size:14px;">Step 1 of 6</span></p>
+       
+       <p class="text-danger text-center" style = "margin-bottom:30px;margin-top:15px;">Any field that is marked with asterisk * is a required field</p>
         <form class="form-horizontal" >
-          
            <div class="form-group"  >
-               <label class="control-label col-sm-4 input-md" for="first_name">First Name &#42; </label>
+               <label class="control-label col-sm-4 input-md" for="first_name">First Name <span style="color:red;">&#42;</span> </label>
                 <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="First Name" required style="padding:10px">
+                <input type="text" class="form-control"  style="padding:10px;border:1px solid black;" required>
                 </div>
            </div>
            <div class="form-group">
-               <label class="control-label col-sm-4 input-md" for="last_name">Last Name &#42;</label>
+               <label class="control-label col-sm-4 input-md" for="last_name">Last Name <span style="color:red;">&#42;</span></label>
                 <div class="col-sm-4">
-                <input type="text" class="form-control"  placeholder="Last name" required style="padding:10px">
+                <input type="text" class="form-control"   style="padding:10px;border:1px solid black;" required>
                 </div>
            </div>
            <div class="form-group">
-               <label class="control-label col-sm-4 input-md" for="email">Email Address &#42;</label>
+               <label class="control-label col-sm-4 input-md" for="email">Email Address <span style="color:red;">&#42;</span></label>
                 <div class="col-sm-4">
-                <input type="email" class="form-control"  placeholder="Email" required style="padding:10px">
+                <input type="email" class="form-control"  style="padding:10px;border:1px solid black;" required>
                 </div>
            </div>
            <div class="form-group">
                <label class="control-label col-sm-4 input-md" for="phone_number">Phone Number</label>
                 <div class="col-sm-4">
-                <input type="email" class="form-control"  placeholder="Enter your phone number" style="padding:10px">
+                <input type="email" class="form-control"   style="padding:10px;border:1px solid black;">
                 </div>
            </div>
            <div class="form-group">
                <label class="control-label col-sm-4 input-md" for="LinkedIn">LinkedIn Link</label>
                 <div class="col-sm-4">
-                <input type="text" class="form-control"  placeholder="LinkedIn Link" style="padding:10px">
+                <input type="text" class="form-control"   style="padding:10px;border:1px solid black;">
                 </div>
            </div>
            <div class="form-group">
                <label class="control-label col-sm-4 input-md" for="DOB">Date Of birth</label>
                 <div class="col-sm-4">
-                <input type="date" class="form-control"  placeholder="" style="padding:10px">
+                <input type="date" class="form-control"   style="padding:10px;border:1px solid black;">
                 </div>
            </div>
            <div class="form-group">
-               <label class="control-label col-sm-4 input-md" for="resume">Attach your resume &#42; </label>
+               <label class="control-label col-sm-4 input-md" for="resume">Attach your resume <span style="color:red;">&#42;</span> </label>
                 <div class="col-sm-4">
                  <input type="file" required>
                 </div>
@@ -67,7 +64,6 @@
             
 	
         </div>
-<!--        </div>-->
 
 	</ion-content>
 </ion-view>
