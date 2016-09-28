@@ -1,52 +1,73 @@
-<ion-view Add Personal Details " id="page2 ">
-    <ion-content padding="true " class="has-header ">
+<ion-view title="Step 1: Add Personal Details" id="page2">
+    <ion-content padding="true " class="has-header">
 	
-	<div class="container ">
-    <div class="col-xs-12 ">
-	
-	<!--Beginning of the form -->
-        <form role="form " name="signup " ng-submit="# " novalidate>
-            <div class="col-xs-offset-5 ">
-                <h3 style="font-weight:bold ">Page Heading</h3> </div>
-            <div class="form-group ">
-                <label for="usr ">Email:</label>
-                <input type="email " class="form-control " placeholder="Email " name="email " ng-model="user.email " required> 
-				</div>
-            <div class="form-group ">
-                <label for="usr ">Password:</label>
-                <input type="password " class="form-control " placeholder="Enter Password " name="password " ng-model="user.password " ng-minlength="5 " ng-maxlength="15 " required> 
-			</div>
-            	
-			
-			
-			<!--Error messages that are triggered when the conditions are not met-->
-			<div class="padding ">
-                <p ng-show="signup.email.$error.required && !signup.email.$pristine " style="color:maroon "> * Your Email Address is Required </p>
-                <p ng-show="signup.email.$invalid && !signup.email.$pristine " style="color:maroon "> You Must Enter A Valid Email Address </p>
-                <p ng-show="signup.password.$error.required && !signup.password.$pristine " style="color:maroon "> * Password is required </p>
-                <p ng-show="signup.password.$error.minlength && !signup.password.$pristine " style="color:maroon "> * Your Password Must be more than 5 Characters </p>
-                <p ng-show="signup.password.$error.maxlength " style="color:maroon "> * Your Password Must be less than 15 Characters </p>
-            </div>
-			<!-- #End of Error messages-->
-		
-		  
-				<!-- submit button 
-					##Makes use of angular's ng-disabled directive. As long as the condition "signup.$invalid "n is true, the submit button will
-					##remain disabled
-					##see form for the conditions
-				-->
-				
-            <button type="submit " class="btn btn-success btn-block " ng-disabled="signup.$invalid ">Sign up</button>
-			
-			
+	<div class="container">
+
+	 <span class="glyphicon glyphicon-info-sign pull-left">
+      </span>
+       <p class="pull-right">Step 2 of 6</p>
+       <br>
+       <h4 class="text-danger text-center">Any field that is marked with asterisk * is a required field</h4>
+        <form class="form-horizontal" >
+          
+           <div class="form-group"  >
+               <label class="control-label col-sm-4 input-md" for="first_name">First Name &#42; </label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="First Name" required style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="last_name">Last Name &#42;</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control"  placeholder="Last name" required style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="email">Email Address &#42;</label>
+                <div class="col-sm-4">
+                <input type="email" class="form-control"  placeholder="Email" required style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="phone_number">Phone Number</label>
+                <div class="col-sm-4">
+                <input type="email" class="form-control"  placeholder="Enter your phone number" style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="LinkedIn">LinkedIn Link</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control"  placeholder="LinkedIn Link" style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="DOB">Date Of birth</label>
+                <div class="col-sm-4">
+                <input type="date" class="form-control"  placeholder="" style="padding:10px">
+                </div>
+           </div>
+           <div class="form-group">
+               <label class="control-label col-sm-4 input-md" for="resume">Attach your resume &#42; </label>
+                <div class="col-sm-4">
+                 <input type="file" required>
+                </div>
+           </div>
+          
+               <p class="text-center">Don't Have a CV/Resume? No worries, click <a href="#">Here</a> to quickly create your own.
+               Remember! We will also edit your CV for you.
+               </p>
+               <br>
+          <div class="col-md-6 text-center">
+	       <a href="#" class="btn btn-default btn-block borders ">Cancel</a>
+	   </div>
+	   <div class="col-md-6 text-center">
+	         <a href="#" class="btn btn-danger btn-block borders">Section Complete</a>
+	   </div>
         </form>
-	<!-- #end of the form -->
-    </div>
-</div>
+            
 	
-	
-	
-	
+        </div>
+<!--        </div>-->
 
 	</ion-content>
 </ion-view>
